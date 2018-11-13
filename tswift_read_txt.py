@@ -7,3 +7,12 @@
 # Read each line from the file and split the line to form a list of words.
 # Check if the word provided by the user and any of the words in the list are equal and if they are, increment the word count.
 # So, you will need to create “nested” for loop (two for loops)
+
+total = 0
+with open("all_tswift_lyrics.txt") as f:
+    for line in f:
+        word = line.find("love")
+        if word != -1 and word != 0:
+            total += 1
+
+print total
